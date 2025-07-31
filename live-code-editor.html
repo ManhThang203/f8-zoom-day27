@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YoungTobi</title>
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/code-edit.css" />
+  </head>
+  <body>
+     <div class="container">
+            <!-- Editor -->
+            <div class="editor">
+                <div class="editor-header">Code Editor</div>
+                <textarea
+                    id="code-input"
+                    placeholder="Enter your code here..."
+                ></textarea>
+            </div>
+            <!-- Preview Frame -->
+            <div class="preview">
+                <iframe id="preview-frame"></iframe>
+            </div>
+
+            <!-- Context Menu -->
+            <ul
+                id="context-menu"
+                class="context-menu"
+                hidden
+            >
+                <li class="context-menu-item delete">
+                    <span>Delete Code</span> <span>🗑️</span>
+                </li>
+                <li class="context-menu-item copy">
+                    <span>Copy Code</span>
+                    <span>📋</span>
+                </li>
+                <li class="context-menu-item paste">
+                    <span>Paste Code</span>
+                    <span>📥</span>
+                </li>
+            </ul>
+        </div>
+    <script src="./js/code-edit.js"></script>
+  </body>
 </html>
