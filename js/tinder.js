@@ -154,7 +154,6 @@ function handleMove(e) {
   currentY = deltaY;
 
   const rotate = deltaX * rotationFactor;
-  console.log(rotate);
 
 
   // Di chuyển và xoay thẻ theo tay
@@ -260,7 +259,7 @@ function handleButtonClick(direction) {
 function displayNoMoreUsersMessage() {
   const message = document.createElement("div");
   message.classList.add("no-more-users");
-  message.textContent = "Oops! Hết rồi. Quay lại sau nhé!";
+  message.textContent = "YoungTobi 🐱‍🏍";
   cardStack.appendChild(message);
 }
 
